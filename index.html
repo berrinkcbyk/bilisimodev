@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<meta name="description" content="SEZAR">
+		<meta name="author" content="SEZAR">
+		<title>SEZAR</title>
+	
+	<link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@200;300;400;500;600;700;800;900" rel="stylesheet">
+	<link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+     <link href="assets/css/custom.css" rel="stylesheet" />
+	</head>
+	<body>
+		
+	
+		<section class="sezar-sifre"  >
+			<div class="container p-0 ">
+				<div class="bg-white border-radius-15">
+					<div class="d-flex">
+						<div class="col-lg-6  border-right  p-0">
+							<div class="item">
+								<div class="top">
+								<div class="d-flex align-items-center justify-content-between m-height-145">
+								<h3>SEZAR ŞİFRELEME ve BARIŞ ŞİFRELEME</h3>
+								</div>
+								
+								</div>
+								
+							
+								<div class="border-top" onclick="actives('1')">
+								<div class="d-flex align-items-center justify-content-between m-height-145 ">
+								<h6 class="active"  >SEZAR ŞİFRELEME İÇİN TIKLAYINIZ</h6>
+								</div>
+								</div>
+								<div class="border-top" onclick="actives('2')">
+								<div class="d-flex align-items-center justify-content-between m-height-145 ">
+								<h6   >BARIŞ ŞİFRELEME İÇİN TIKLAYINIZ</h6>
+								</div>
+								</div>
+								
+							</div>
+						</div>
+						<div class="col-lg-6  ">
+							<div id="soru1" class="items item h-100 active">
+								<div class="top">
+								<div class="d-flex align-items-center justify-content-between m-height-145">
+								<p>Offsetini Bulmak yada Şifrelemek  İstediginiz Cümleyi Giriniz. </p>
+								
+								</div>
+								<h4 id="sonuc" style="display:none;"></h4>
+								</div>
+								<div class="bottom">
+								<input name="sifrelimetin" type="text" id="sifrelimetin" class="form-control-plaintext border-bottom" required="required" placeholder="Cümle">
+								<input name="key" type="number" min="0" id="key" class="form-control-plaintext border-bottom" required="required" placeholder="key (offset bulmak için boş bırakınız)">
+								
+								
+								<button onclick="sifrele()">Şifrele</button>
+								<button onclick="offsetbul()">Ofset Bul</button>
+								
+								</div>
+								
+							</div>
+							<div  id="soru2" class="items item h-100 ">
+								<div class="top">
+								<div class="d-flex align-items-center justify-content-between m-height-145">
+								<p>Şifrelemek  İstediginiz yada Çözmek istediginiz Cümle  ve Key Değerini Giriniz. </p>
+								
+								</div>
+								</div>
+								<h4 id="sonuc2" style="display:none;"></h4>
+								<div class="bottom">
+								<input name="metin" type="text" id="metin" class="form-control-plaintext border-bottom" required="required" placeholder="Metin ">
+								
+								<input name="key" type="text" id="key" class="form-control-plaintext border-bottom" required="required" placeholder="key">
+								
+								<button onclick="sifrele1()">Şifrele</button>
+								
+								<button onclick="sifrele2()">Şifre Çöz</button>
+								
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+<div id="sonucmodal" class="modal">
+
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <div id="sonucoffset">
+	
+	</div>
+  </div>
+
+</div>
+ 
+  <script src="assets/js/custom.js"></script>
+		
+		
+	</body>
+</html>
